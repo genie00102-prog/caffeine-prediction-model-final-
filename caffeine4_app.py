@@ -50,7 +50,7 @@ def simulate_custom_model(age, weight, week_number, D, Emax=1.0, EC50=2.0, effec
 
     # 그래프 그리기
     plt.figure(figsize=(10, 5))
-    plt.plot(t, E_t, label=f'Age={age}, Weight={weight}kg, {week_number}times/week', color='orange')
+    plt.plot(t, E_t, label=f'Age={age}, Weight={weight}kg, {week_number}times/week', color='green')
 
     # 혈중 농도 1~3mg 구간 파란색 영역
     in_zone = (C_t >= 1) & (C_t <= 3)
