@@ -98,7 +98,7 @@ def simulate_custom_model(age, weight, week_number, D, Emax=1.0, EC50=2.0, effec
 st.title(" 개인 맞춤형 카페인 효과 예측 시뮬레이터")
 st.markdown("나이, 체중, 주당 카페인 섭취 횟수, 1회 섭취량을 입력하세요.")
 
-input_str = st.text_input("(나이, 체중, 섭취 횟수, 약물양(mg))을 ( , , , ) 형식으로 입력", " ex (20, 60, 3, 150)")
+input_str = st.text_input("(나이, 체중, 섭취 횟수, 약물양)을 ( , , , ) 형식으로 입력, 이때 약물양은 카페인 함량-단위 mg", " ex (20, 60, 3, 150)")
 
 if st.button("시뮬레이션 실행"):
     try:
